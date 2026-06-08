@@ -4,26 +4,18 @@ A comprehensive research project analyzing the dynamic correlations between stoc
 
 ## Overview
 
-This project implements a complete pipeline for analyzing the relationship between financial asset classes (stocks and bonds) while accounting for:
-
-- **Time-varying correlations**: Rolling window correlation analysis
-- **Volatility clustering**: GARCH model optimization
-- **Structural breaks**: Kernel-based change point detection
-- **Market regimes**: Analysis of Fed funds rate and inflation dynamics
+This project implements a complete pipeline for analyzing the relationship between financial asset classes (stocks and bonds) 
 
 The analysis combines multiple statistical tests and visualization techniques to provide insights into market behavior and asset class relationships over time.
 
 ## Features
 
-- **Data Processing**: Load and clean multiple financial datasets (stocks, bonds, Fed funds, inflation)
 - **Statistical Analysis**:
   - Stationarity tests (ADF, KPSS)
   - Jarque-Bera normality tests
   - Rolling window correlation
-- **GARCH Modeling**: DCC-GARCH model optimization for capturing time-varying correlations and volatility
+- **GARCH Modeling**: DCC-GARCH model optimization for capturing time-varying correlations
 - **Breakpoint Detection**: Kernel-based methods for identifying structural breaks in market behavior
-- **Visualization**: Comprehensive plotting of correlations, volatility, breakpoints, and market regimes
-- **Flexible Pipeline**: Modular command-line interface for selective execution of analysis components
 
 ## Project Structure
 
