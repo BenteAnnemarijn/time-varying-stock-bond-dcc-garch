@@ -1,0 +1,36 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["thesis"]
+
+[project]
+name = "master-thesis"
+version = "0.1.0"
+description = "Bentes Master Thesis"
+requires-python = ">=3.12"
+dependencies = [
+    "python-dotenv",
+    "pandas",
+    "openpyxl",
+    "xlrd",
+    "pyarrow",
+    "ruptures",
+    "colorlog",
+    "matplotlib",
+    "statsmodels",
+    "scipy",
+
+]
+
+[dependency-groups]
+dev = [
+    "mypy",
+    "ruff",
+    "pandas-stubs",
+    "scipy-stubs",
+]
